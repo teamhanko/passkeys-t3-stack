@@ -1,28 +1,52 @@
-# Create T3 App
+# Hanko Passkey Starter for T3 Stack
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app` along with Hanko Passkey API for logging in with passkey.
 
-## What's next? How do I make an app with this?
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
-
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+If you are not familiar with the different technologies used in this project, please refer to the respective docs.
 
 - [Next.js](https://nextjs.org)
 - [NextAuth.js](https://next-auth.js.org)
 - [Prisma](https://prisma.io)
 - [Tailwind CSS](https://tailwindcss.com)
 - [tRPC](https://trpc.io)
+- [Hanko Passkey API](https://www.hanko.io/features/hanko-passkey-api)
 
-## Learn More
+## Clone the repo
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+```bash
+git clone https://github.com/teamhanko/t3-stack-with-passkeys.git
+```
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+## Add the environment variables
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+Add the following environment variables to `.env` file.
 
-## How do I deploy this?
+```sh
+NEXTAUTH_SECRET=random-string
+NEXTAUTH_URL=http://localhost:3000
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+GITHUB_ID=
+GITHUB_SECRET_ID=
+
+DATABASE_URL=your-db-url
+
+PASSKEYS_API_KEY=your-hanko-passkey-api-key
+NEXT_PUBLIC_PASSKEYS_TENANT_ID=your-hanko-passkey-tenant-id
+```
+
+## Install dependencies
+
+```bash
+pnpm install
+```
+
+## Run the project
+
+```bash
+pnpm run dev
+```
+
+
+
+
