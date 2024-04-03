@@ -10,7 +10,6 @@ Before you begin, ensure you have the following:
 
 - Node.js installed (version 20.0.0 or later)
 - Hanko Passkey API key and tenant ID from [Hanko Cloud](https://cloud.hanko.io/)
-- Resend API key from [Resend](https://resend.com/)
 - DB URL. In this case we are using [Supabase](https://supabase.com/)
 
 ## Technologies used
