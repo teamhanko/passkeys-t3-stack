@@ -2,6 +2,8 @@
 
 This repository demonstrates how to add passkey login functionality to your T3 Stack application using Hanko Passkey API. Passkey authentication is a secure and user-friendly alternative to traditional password-based authentication, providing a seamless login experience for users.
 
+For a detailed tutorial on implementing passkey login in your Solid.js app, refer to our blog post: [How to add a passkey login to T3 Stack?](https://www.hanko.io/blog/passkeys-t3-stack)
+
 ![Passkey demo](/passkey.gif)
 
 ## Prerequisites
